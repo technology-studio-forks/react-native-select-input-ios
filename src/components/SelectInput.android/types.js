@@ -1,15 +1,10 @@
 import PropTypes from 'prop-types'
-import { ViewPropTypes } from 'react-native'
 
 import selectInputPropTypes from '../AbstractSelectInput/types.js'
 
 export default {
   ...selectInputPropTypes,
-  mode: PropTypes.oneOf(['dialog', 'dropdown']),
-  style: PropTypes.oneOfType([
-    ViewPropTypes.style,
-    PropTypes.arrayOf(ViewPropTypes.style)
-  ])
+  mode: PropTypes.oneOf(['dialog', 'dropdown'])
 }
 
 export const defaultProps = {
